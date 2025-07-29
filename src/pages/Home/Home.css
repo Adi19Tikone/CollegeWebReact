@@ -1,0 +1,14 @@
+.home-page header {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/Pimpri.png)
+}
+
+header{
+    background-size: cover;
+    background-position: center;
+}
+
+.blog-section {
+    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/abstract-nav.jpg);
+    background-size: cover;
+    background-position: center;
+}
