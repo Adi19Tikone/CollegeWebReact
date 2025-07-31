@@ -1,0 +1,27 @@
+.admin-header-strip {
+    background-color: #c00000;
+  }
+  
+  .admin-card {
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .admin-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .admin-img {
+    height: 280px;
+    object-fit: cover;
+  }
+
+  .admin-staff-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .admin-staff-page > .container {
+    flex: 1;
+  }

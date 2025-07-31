@@ -1,0 +1,21 @@
+.academics-header-strip {
+    background-color: #dc3545; /* Bootstrap's red */
+    color: #ffffff;
+    padding: 0.3rem 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .academics-page {
+    background-color: #fff;
+  }
+  
+  .academics-page ul {
+    padding-left: 20px;
+  }
+  
+  

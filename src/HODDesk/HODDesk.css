@@ -1,0 +1,25 @@
+.hod-header-strip {
+    background-color: #c60000; /* Deep red */
+  }
+  
+  .hod-image {
+    height: 250px;
+    object-fit: cover;
+    border: 5px solid #c60000;
+  }
+  .footer {
+    background-color: #c20000;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .hod-desk-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .hod-desk-content {
+    flex: 1;
+  }

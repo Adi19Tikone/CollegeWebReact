@@ -1,3 +1,52 @@
-.about-page header {
-    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/istockphoto-1400739452-612x612.jpg)
-}
+.about-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .section-strip {
+    background-color: #dc3545; /* Bootstrap's red */
+    color: #ffffff;
+    padding: 0.3rem 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+
+  .accordion-button.red-strip {
+    background-color: #dc3545 !important; /* Bootstrap's red */
+    color: #ffffff !important;
+    font-size: 6rem !important; /* ~24px */
+    font-weight: bold !important;
+    color: white !important;
+    padding: 0.3rem 1rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    text-align: center;
+    text-transform: uppercase ;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.5px;
+  }
+  .accordion-body {
+    font-size: 1.2rem !important; /* ~19px */
+    line-height: 1.6 !important;
+    color: #000 !important;
+  }
+  /* Remove default background on expanded headers */
+  .accordion-button:not(.collapsed) {
+    background-color: #dc3545 !important;
+    color: #fff !important;
+    box-shadow: none;
+  }
+  
+  /* Prevent white flash on collapse/expand */
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+  
+  /* Remove extra background from the container */
+  .accordion-item {
+    border: none;
+  }

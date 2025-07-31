@@ -1,14 +1,23 @@
-.home-page header {
-    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/Pimpri.png)
-}
-
-header{
+.home {
+    height: 100vh;
+    background-image: url('../../utils/images/bg1-Picsart-AiImageEnhancer-Picsart-AiImageEnhancer.jpg');
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+    background-attachment: fixed; /* if you also want a parallax-like effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
 
-.blog-section {
-    background-image: linear-gradient(rgba(5, 10, 35, 0.75), rgba(5, 10, 35, 0.75)), url(../../utils/images/abstract-nav.jpg);
-    background-size: cover;
-    background-position: center;
-}
+  .home-text-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  .home h1, .home p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+  

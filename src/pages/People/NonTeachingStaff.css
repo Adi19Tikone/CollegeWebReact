@@ -1,0 +1,26 @@
+.non-teaching-header-strip {
+    background-color: #c00000;
+  }
+  
+  .non-card {
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .non-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .non-img {
+    height: 280px;
+    object-fit: cover;
+  }
+  .non-teaching-staff-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .non-teaching-staff-page > .container {
+    flex: 1;
+  }

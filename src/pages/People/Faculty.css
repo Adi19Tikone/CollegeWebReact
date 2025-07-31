@@ -1,0 +1,57 @@
+.faculty-header-strip {
+    background-color: #c00000;
+  }
+  
+  .faculty-card {
+    border: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .faculty-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .faculty-img {
+    height: 300px;
+    object-fit: cover;
+  }
+
+  .faculty-image {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .faculty-page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .faculty-page .container {
+    flex: 1;
+  }
+  
+  .faculty-img {
+    height: 300px;
+    object-fit: cover;
+  }
+  .faculty-page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .faculty-img {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  footer {
+    background-color: #f8f9fa;
+  }
+
+  .faculty-header-strip {
+    background-color: #c40000; /* or your department's red */
+   
+    
+  }

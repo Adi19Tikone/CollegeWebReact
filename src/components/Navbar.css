@@ -1,0 +1,33 @@
+.navbar .dropdown-menu {
+    background-color: white;
+    border: none;
+  }
+  
+  /* Default dropdown item styling */
+  .navbar .dropdown-item {
+    color: black;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect: red background and white text */
+  .navbar .dropdown-item:hover {
+    background-color: #c00000; /* Deep red */
+    color: white;
+    font-weight: bold;
+  }
+
+  .navbar .dropdown-item,
+.navbar .dropdown-item:link,
+.navbar .dropdown-item:visited {
+  color: black !important;
+  text-decoration: none !important;
+  background-color: white !important;
+}
+
+/* On hover: red background, white text */
+.navbar .dropdown-item:hover {
+  background-color: #c00000 !important;
+  color: white !important;
+  font-weight: bold;
+}
