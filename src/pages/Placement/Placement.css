@@ -1,0 +1,25 @@
+.placement-header-strip {
+    background-color: #dc3545; /* Red strip like Student Corner */
+  }
+  
+  .section-title {
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .recruiter-logo {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    opacity: 0.85;
+  }
+  
+  .recruiter-logo:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  

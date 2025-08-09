@@ -40,7 +40,7 @@ function NavbarComp() {
             <Nav.Link as={NavLink} to="/academics">Academics</Nav.Link>
             <Nav.Link as={NavLink} to="/research">Research</Nav.Link>
             <Nav.Link as={NavLink} to="/student-corner">Student Corner</Nav.Link>
-            <Nav.Link as={NavLink} to="/placements">Placements</Nav.Link>
+            <Nav.Link as={NavLink} to="/placements">Placement (T&P)</Nav.Link>
             <Nav.Link as={NavLink} to="/achievements">Student Achievements</Nav.Link>
             <Nav.Link as={NavLink} to="/contact">Contact</Nav.Link>
           </Nav>

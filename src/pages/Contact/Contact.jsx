@@ -55,22 +55,25 @@ function Contact() {
         </Row>
 
         {/* Optional Google Map */}
-        <Row>
-          <Col>
-            <h4 className="mb-3">📍 Find Us on Map</h4>
-            <div className="ratio ratio-16x9">
-              <iframe
-                title="PCU Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3780.456313557795!2d73.76801371489357!3d18.642980287339305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf408d5f7cb7%3A0x73d41c392b9a8fc7!2sPimpri%20Chinchwad%20University!5e0!3m2!1sen!2sin!4v1711541652741"
-                width="100%"
-                height="450"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-              ></iframe>
-            </div>
-          </Col>
-        </Row>
+      {/* Map Section */}
+<Row>
+  <Col>
+    <h4 className="mb-3">
+      📍 Find Us on Map
+    </h4>
+    <div className="ratio ratio-16x9 contact-map">
+      <iframe
+        title="PCU Map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3778.1088793597914!2d73.60484507596021!3d18.748673062165295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2addaeb41d919%3A0xcc551cf73e3bdf1c!2sPimpri%20Chinchwad%20University!5e0!3m2!1sen!2sin!4v1754768159914!5m2!1sen!2sin"
+        style={{ border: 0 }}
+        allowFullScreen=""
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+  </Col>
+</Row>
+
       </Container>
     </div>
   );

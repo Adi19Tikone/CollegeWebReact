@@ -1,8 +1,25 @@
 import React from 'react';
-import { Container, Row, Col, Table, Badge } from 'react-bootstrap';
+import { Container, Row, Col, Table } from 'react-bootstrap';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer
 } from 'recharts';
+
+// React Icons
+import { FaChartBar, FaBuilding, FaUniversity, FaPhoneAlt } from 'react-icons/fa';
+
+// Import recruiter logos from utils/images
+import TCSLogo from '../../utils/images/tcs.png';
+import InfosysLogo from '../../utils/images/infosys.jpg';
+import WiproLogo from '../../utils/images/wipro.png';
+import CognizantLogo from '../../utils/images/Cognizant.png';
+import CapgeminiLogo from '../../utils/images/capgemini.jpg';
+import AmazonLogo from '../../utils/images/amazon.png';
+import MicrosoftLogo from '../../utils/images/microsoft.png';
+import ZensarLogo from '../../utils/images/zensar.png';
+import PersistentLogo from '../../utils/images/persistent.png';
+import DeloitteLogo from '../../utils/images/deloitte.png';
+
+import './Placement.css';
 
 function Placements() {
   const stats = [
@@ -12,8 +29,16 @@ function Placements() {
   ];
 
   const recruiters = [
-    "TCS", "Infosys", "Wipro", "Cognizant", "Capgemini",
-    "Amazon", "Microsoft", "Zensar", "Persistent", "Deloitte"
+    { name: "TCS", logo: TCSLogo },
+    { name: "Infosys", logo: InfosysLogo },
+    { name: "Wipro", logo: WiproLogo },
+    { name: "Cognizant", logo: CognizantLogo },
+    { name: "Capgemini", logo: CapgeminiLogo },
+    { name: "Amazon", logo: AmazonLogo },
+    { name: "Microsoft", logo: MicrosoftLogo },
+    { name: "Zensar", logo: ZensarLogo },
+    { name: "Persistent", logo: PersistentLogo },
+    { name: "Deloitte", logo: DeloitteLogo }
   ];
 
   const internships = [
@@ -24,16 +49,22 @@ function Placements() {
   ];
 
   return (
-    <div className="py-5 bg-white">
-      <Container>
-        <h2 className="fw-bold text-center mb-5">💼 Placements & Internships</h2>
+    <div className="placements-page py-5 bg-white">
+      {/* Red strip header */}
+      <div className="placement-header-strip text-white text-center py-3">
+        <h2 className="mb-0 fw-bold">Placements & Internships</h2>
+      </div>
 
+      <Container className="mt-4">
+        
         {/* Placement Stats Table */}
         <Row className="mb-4">
           <Col>
-            <h4 className="mb-3">📊 Placement Statistics</h4>
+            <h4 className="section-title mb-3 text-danger">
+              <FaChartBar className="me-2" /> Placement Statistics
+            </h4>
             <Table striped bordered hover responsive>
-              <thead>
+              <thead className="table-danger">
                 <tr>
                   <th>Year</th>
                   <th>Students Placed (%)</th>
@@ -58,7 +89,6 @@ function Placements() {
         {/* Recharts Bar Chart */}
         <Row className="mb-5">
           <Col>
-            <h5 className="mb-3">📈 Placement Trends (Bar Chart)</h5>
             <ResponsiveContainer width="100%" height={300}>
               <BarChart data={stats} margin={{ top: 20, right: 30, left: 0, bottom: 5 }}>
                 <CartesianGrid strokeDasharray="3 3" />
@@ -66,8 +96,8 @@ function Placements() {
                 <YAxis />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="placed" fill="#8884d8" name="Students Placed (%)" />
-                <Bar dataKey="average" fill="#82ca9d" name="Avg Package (LPA)" />
+                <Bar dataKey="placed" fill="#dc3545" name="Students Placed (%)" />
+                <Bar dataKey="average" fill="#6c757d" name="Avg Package (LPA)" />
               </BarChart>
             </ResponsiveContainer>
           </Col>
@@ -76,12 +106,25 @@ function Placements() {
         {/* Recruiters */}
         <Row className="mb-5">
           <Col>
-            <h4 className="mb-3">🏢 Top Recruiters</h4>
-            <div className="d-flex flex-wrap gap-3">
+            <h4 className="section-title mb-3 text-danger">
+              <FaBuilding className="me-2" /> Top Recruiters
+            </h4>
+            <div className="d-flex flex-wrap gap-4 align-items-center justify-content-center">
               {recruiters.map((company, index) => (
-                <Badge bg="secondary" key={index} className="fs-6 p-2">
-                  {company}
-                </Badge>
+                <div
+                  key={index}
+                  style={{
+                    width: "100px",
+                    textAlign: "center",
+                    padding: "5px"
+                  }}
+                >
+                  <img
+                    src={company.logo}
+                    alt={company.name}
+                    className="recruiter-logo"
+                  />
+                </div>
               ))}
             </div>
           </Col>
@@ -90,7 +133,9 @@ function Placements() {
         {/* Internship Opportunities */}
         <Row className="mb-5">
           <Col>
-            <h4 className="mb-3">📚 Internship Opportunities</h4>
+            <h4 className="section-title mb-3 text-danger">
+              <FaUniversity className="me-2" /> Internship Opportunities
+            </h4>
             <ul>
               {internships.map((intern, index) => (
                 <li key={index}>{intern}</li>
@@ -102,7 +147,9 @@ function Placements() {
         {/* Placement Cell Contact */}
         <Row>
           <Col>
-            <h4 className="mb-3">📞 Placement Cell Contact</h4>
+            <h4 className="section-title mb-3 text-danger">
+              <FaPhoneAlt className="me-2" /> Placement Cell Contact
+            </h4>
             <p><strong>Prof. Anjali Patil</strong></p>
             <p>Placement Coordinator, CSE Department</p>
             <p>Email: <a href="mailto:placements.cse@yourcollege.edu">placements.cse@yourcollege.edu</a></p>

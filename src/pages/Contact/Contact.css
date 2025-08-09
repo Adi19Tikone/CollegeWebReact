@@ -1,0 +1,32 @@
+.contact-section {
+    background-color: #fff5f5;
+  }
+  
+  .contact-header-strip {
+    background-color: #c62828;
+    padding: 14px 0;
+    border-radius: 6px;
+  }
+  
+  .contact-info p a {
+    color: #c62828;
+    text-decoration: none;
+  }
+  
+  .contact-info p a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-form .form-label {
+    font-weight: 500;
+  }
+  
+  .contact-form button {
+    padding: 10px 18px;
+    font-weight: bold;
+  }
+  
+  .contact-map iframe {
+    border-radius: 8px;
+  }
+  

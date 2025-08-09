@@ -27,7 +27,7 @@ function App() {
           <Route path="/academics" element={<Academics />} />
           <Route path="/research" element={<Research />} />
           <Route path="/student-corner" element={<StudentCorner />} />
-          <Route path="/placement" element={<Placement />} />
+          <Route path="/placements" element={<Placement />} />
           <Route path="/achievements" element={<Achievements />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/student-achievements" element={<StudentAchievements />} />
